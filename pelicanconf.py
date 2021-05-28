@@ -3,7 +3,8 @@
 
 AUTHOR = 'Alvaro Ortiz'
 SITENAME = 'Data-Gizmo'
-SITEURL = ''
+SITEURL = 'http://username.github.io'
+RELATIVE_URLS = True
 
 PATH = 'content'
 
@@ -32,3 +33,10 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+MARKUP = ("md", "ipynb")
+
+from pelican_jupyter import markup as nb_markup
+PLUGINS = [nb_markup]
+
+IGNORE_FILES = [".ipynb_checkpoints"]
