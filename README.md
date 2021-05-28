@@ -42,3 +42,35 @@ ghp-import output -b gh-pages
 git push git@github.com:alvaroof/alvaroof.github.io.git gh-pages:master
 
 ## DONE.
+---
+## Add plugins
+
+### First download plugins from github by cloning repository in a different folder
+git clone --recursive https://github.com/getpelican/pelican-plugins pelican-plugins
+
+---
+
+## Customize Theme
+
+### First download Pelican themes from github by cloning repository in a different folder
+git clone --recursive https://github.com/getpelican/pelican-themes pelican-themes
+
+
+---
+
+## Process jupyter notebooks
+
+### Add the following to pelicanconf.py
+```python
+#add following to pelicanconf.py
+
+MARKUP = ("md", "ipynb")
+
+from pelican_jupyter import markup as nb_markup
+PLUGINS = [nb_markup]
+
+IGNORE_FILES = [".ipynb_checkpoints"]
+```
+
+
+
