@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Data-Gizmo - Article</title><link href="http://username.github.io/" rel="alternate"></link><link href="http://username.github.io/feeds/article.atom.xml" rel="self"></link><id>http://username.github.io/</id><updated>2019-05-18T11:30:00+02:00</updated><subtitle>The minimalist Pelican theme</subtitle><entry><title>Hola Mundo</title><link href="http://username.github.io/hola-mundo.html" rel="alternate"></link><published>2019-05-18T10:30:00+02:00</published><updated>2019-05-18T11:30:00+02:00</updated><author><name>Alvaro Ortiz</name></author><id>tag:username.github.io,2019-05-18:/hola-mundo.html</id><summary type="html">&lt;p&gt;Mi primer post usando Pelican y GitHub Pages&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Título&lt;/h2&gt;
+&lt;h3&gt;Subtítulo&lt;/h3&gt;
+&lt;p&gt;Este es un ejemplo de texto que da entrada a una lista genérica de elementos:
+- Elemento 1
+- Elemento 2
+- Elemento 3&lt;/p&gt;
+&lt;p&gt;Este es un ejemplo de texto que da entrada a una lista numerada:
+1. Elemento 1
+2. Elemento 2
+3. Elemento 3&lt;/p&gt;
+&lt;p&gt;Al texto en Markdown puedes añadirle formato como &lt;strong&gt;negrita&lt;/strong&gt; o &lt;em&gt;cursiva&lt;/em&gt; de una manera muy sencilla.
+Todo esto fue extraído de este &lt;a href="https://markdown.es/sintaxis-markdown/"&gt;Post sobre markdown&lt;/a&gt;&lt;/p&gt;</content><category term="Article"></category></entry></feed>
