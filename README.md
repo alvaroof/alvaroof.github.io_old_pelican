@@ -62,8 +62,6 @@ git clone --recursive https://github.com/getpelican/pelican-themes pelican-theme
 
 ### Add the following to pelicanconf.py
 ```python
-#add following to pelicanconf.py
-
 MARKUP = ("md", "ipynb")
 
 from pelican_jupyter import markup as nb_markup

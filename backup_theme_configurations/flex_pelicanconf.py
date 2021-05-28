@@ -13,9 +13,7 @@ PYGMENTS_STYLE = "monokai"
 
 ROBOTS = "index, follow"
 
-#THEME = "Flex"
-THEME = "pelican-blue"
-
+THEME = "Flex"
 PATH = "content"
 OUTPUT_PATH = "output"
 TIMEZONE = "Europe/Madrid"
@@ -90,12 +88,3 @@ THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True
 THEME_COLOR_ENABLE_USER_OVERRIDE = True
 
 USE_LESS = True
-
-
-
-# pelican-blue
-SIDEBAR_DIGEST = 'Programmer and Web Developer'
-FAVICON = 'url-to-favicon'
-DISPLAY_PAGES_ON_MENU = True
-TWITTER_USERNAME = 'twitter-user-name'
-MENUITEMS = (('Blog', SITEURL),)
