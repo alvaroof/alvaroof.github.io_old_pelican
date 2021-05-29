@@ -1,101 +1,124 @@
-<!doctype html>
-<html lang="en" itemscope itemtype="http://schema.org/Person">
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-  <meta charset="utf-8">
-  <!-- Site Meta Data -->
-  <title>This is my Article 1</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="Alvaro Ortiz">
+    <title>This is my Article 1 - Data-Gizmo</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="shortcut icon" href="url-to-favicon">
 
-  <!-- schema.org -->
-  <meta itemprop="name" content="Data-Gizmo">
-  <meta itemprop="image" content="">
-  <meta itemprop="description" content="">
 
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-  <!-- Style Meta Data -->
-  <link rel="stylesheet" href="./theme/css/style.css" type="text/css" />
-  <link rel="stylesheet" href="./theme/css/pygments.css" type="text/css" />
+<link rel="canonical" href="./test1.html">
 
-  <!-- Feed Meta Data -->
-    <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Data-Gizmo ATOM Feed" />
+        <meta name="author" content="Alvaro Ortiz" />
+        <meta name="keywords" content="tool,software,best" />
+        <meta name="description" content="This is the most important tool out there" />
 
-  <!-- Twitter Feed -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="twitter-user-name">
-  <meta name="twitter:image" content="">
+        <meta property="og:site_name" content="Data-Gizmo" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="This is my Article 1"/>
+        <meta property="og:url" content="./test1.html"/>
+        <meta property="og:description" content="This is the most important tool out there"/>
+        <meta property="article:published_time" content="2019-06-21" />
+            <meta property="article:section" content="misc" />
+            <meta property="article:tag" content="tool" />
+            <meta property="article:tag" content="software" />
+            <meta property="article:tag" content="best" />
+            <meta property="article:author" content="Alvaro Ortiz" />
 
-<meta name="twitter:creator" content="twitter-user-name">
-<meta name="twitter:url" content="./test1.html">
-<meta name="twitter:title" content="Data-Gizmo ~ This is my Article 1">
-<meta name="twitter:description" content="<p>This is the most important tool out there</p>">
 
-<!-- Facebook Meta Data -->
-<meta property="og:title" content="Data-Gizmo ~ This is my Article 1" />
-<meta property="og:description" content="<p>This is the most important tool out there</p>" />
-<meta property="og:image" content="" />
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="./theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="./theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="./theme/css/pygments/monokai.css" rel="stylesheet">
+    <link rel="stylesheet" href="./theme/css/style.css" type="text/css"/>
+
+        <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Data-Gizmo ATOM Feed"/>
+
+        <link href="./feeds/misc.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Data-Gizmo misc ATOM Feed"/>
 </head>
-
 <body>
-  <!-- Sidebar -->
-  <aside>
-    <!--<center><a href="."><img id="avatar" src=""></a></center>-->
-    <h1>Data-Gizmo</h1>
-      <p>Programmer and Web Developer</p>
-    <br>
 
-      <a class="twitter-follow-button"
-      href="https://twitter.com/twitter-user-name"
-      data-show-count="false"
-      data-lang="en">
-      Follow @twitterdev
-      </a>
-      <script type="text/javascript">
-      window.twttr = (function (d, s, id) {
-        var t, js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src= "https://platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js, fjs);
-        return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
-      }(document, "script", "twitter-wjs"));
-      </script>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="./" class="navbar-brand">
+Data-Gizmo            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                    <li><a href="/archives.html">Archives</a></li>
+                    <li><a href="/categories.html">Categories</a></li>
+                    <li><a href="/tags.html">Tags</a></li>
+                         <li><a href="./pages/about.html">
+                             About me
+                          </a></li>
+                        <li >
+                            <a href="./category/article.html">Article</a>
+                        </li>
+                        <li class="active">
+                            <a href="./category/misc.html">Misc</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
 
-    <nav class="nav">
-      <ul class="list-bare">
-      
-          <li><a class="nav__link" href="http://username.github.io">Blog</a></li>
-         
-         
-      </ul>
-    </nav>
+<!-- Banner -->
+<!-- End Banner -->
 
-    <p class="social">
-        <a href="https://github.com/alexandrevicenzi/Flex" target="_blank" ><img src="./theme/images/icons/github.png"></a>
-        <a href="/blog/feeds/all.atom.xml" target="_blank" ><img src="./theme/images/icons/rss.png"></a>
-      <a href="./feeds/all.atom.xml" rel="alternate">
-        <img src="./theme/images/icons/rss.png"></a>
-    </p>
+<!-- Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="./test1.html"
+                       rel="bookmark"
+                       title="Permalink to This is my Article 1">
+                        This is my Article 1
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2019-06-21T12:00:00+02:00"> June 21, 2019</time>
+    </span>
 
-    <!--
-    <h2>Categories</h2>
-    <ul class="navbar">
-      <li><a href="./category/article.html">Article</a></li>
-      <li class="active"><a href="./category/misc.html">misc</a></li>
-    </ul> 
-    -->
-  </aside>
 
-  <!-- Content -->
-  <article>
-<section id="content">
-    <article>
-        <h2 class="post_title post_detail"><a href="./test1.html" rel="bookmark" title="Permalink to This is my Article 1">This is my Article 1</a></h2>
-        <div class="entry-content blog-post">
-            <style type="text/css">/*!
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="./tag/tool.html">tool</a>
+        /
+	<a href="./tag/software.html">software</a>
+        /
+	<a href="./tag/best.html">best</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <style type="text/css">/*!
 *
 * IPython notebook
 *
@@ -1253,43 +1276,56 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 }
 </script>
 
-        </div>
-        <div class="post_list">
-            <span>By </span>
-            <a href="./author/alvaro-ortiz.html">@Alvaro Ortiz</a>
-            <span> in </span>
-            <span class="post_category"><a href="./category/misc.html" rel="bookmark" title="Permalink to misc">[ misc ]</a></span>
-            <span class="post_date">June 21, 2019</span>
-            <div><span>Tags : </span>
-                <span><a href="./tag/tool.html">#tool, </a></span>
-                <span><a href="./tag/software.html">#software, </a></span>
-                <span><a href="./tag/best.html">#best, </a></span>
             </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
 
-            <div class="entry-social">
-                <span class="twitter"><a target="_blank" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;" title="Twitter" href="https://twitter.com/share?url=./test1.html&text=This is my Article 1&via=twitter-user-name"><img src="./theme/images/icons/twitter-s.png"></a></span>
-
-                <span class="gplus"><a target="_blank" title="Google +" href="https://plus.google.com/share?url=./test1.html&hl=fr" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img src="./theme/images/icons/google-s.png"></a></span>
-
-                <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;" href="https://www.facebook.com/sharer.php?u=./test1.html&t=This is my Article 1"><img src="./theme/images/icons/facebook-s.png"></a></span>
-
-                <a  target="_blank" title="Linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=./test1.html&title=This is my Article 1" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img src="./theme/images/icons/linkedin-s.png"></a>
-
-                <span class="mail"><a href="mailto:?subject=This is my Article 1&amp;body=Viens découvrir un article à propos de [This is my Article 1] sur le site de Alvaro Ortiz. ./test1.html" title="Share by Email" target="_blank"><img src="./theme/images/icons/mail-s.png"></a></span>
-            </div>
         </div>
-    </article>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://github.com/alvaroof"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+    <li class="list-group-item"><a href="https://linkedin.com/in/alvaroof"><i class="fa fa-linkedin-square fa-lg"></i> linkedin</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+  </ul>
 </section>
-  </article>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
 
-  <!-- Footer -->
-  <footer>
-    <p>
-      Blog powered by <a href="http://getpelican.com/">Pelican</a>, 
-      which takes great advantage of <a href="http://python.org">Python</a>.
-      Theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a> by <a href="https://parbhatpuri.com/">@parbhat</a>.
-    </p>
-  </footer>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2020 Alvaro Ortiz
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="./theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="./theme/js/respond.min.js"></script>
+
+
 
 
 </body>
