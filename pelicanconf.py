@@ -4,15 +4,15 @@ from datetime import datetime
 
 AUTHOR = 'Alvaro Ortiz'
 SITENAME = 'Data-Gizmo'
-HIDE_SITENAME = False
+HIDE_SITENAME = True
 SITEURL = 'http://alvaroof.github.io'
 #SITELOGO = 'images/my_site_logo.jpg'
 #SITELOGO_SIZE = 80
 #FAVICON = 'images/my_site_logo.jpg'
-AVATAR='images/avatar.jpg'
-ABOUT_ME="I am a Physicist recycled into Data Scientist"
+#AVATAR='images/avatar.jpg'
+#ABOUT_ME="I am a Physicist recycled into Data Scientist"
 PADDED_SINGLE_COLUMN_STYLE = False
-BANNER = 'images/banner.jpg'
+BANNER = 'images/banner-2.jpg'
 BANNER_SUBTITLE = 'This is my subtitle for my Banner'
 BANNER_ALL_PAGES = False
 
@@ -28,12 +28,13 @@ BOOTSTRAP_FLUID = True
 DISPLAY_BREADCRUMBS=True
 DISPLAY_CATEGORY_IN_BREADCRUMBS=True
 BOOTSTRAP_NAVBAR_INVERSE = False
-DISPLAY_ARTICLE_INFO_ON_INDEX=True
+DISPLAY_ARTICLE_INFO_ON_INDEX=False
+RELATED_POSTS_MAX = 5
 
 MARKUP = ("md", "ipynb")
 from pelican_jupyter import markup as nb_markup
 PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = ['i18n_subsites', nb_markup]
+PLUGINS = ['i18n_subsites', 'related_posts', 'series', nb_markup]
 IGNORE_FILES = [".ipynb_checkpoints"]
 
 JINJA_ENVIRONMENT = {"extensions": ["jinja2.ext.i18n"]}
@@ -48,8 +49,8 @@ DATE_FORMATS = {
 
 USE_FOLDER_AS_CATEGORY = False
 MAIN_MENU = True
-SHOW_ARTICLE_AUTHOR = True
-SHOW_ARTICLE_CATEGORY = True
+SHOW_ARTICLE_AUTHOR = False
+SHOW_ARTICLE_CATEGORY = False
 
 SOCIAL = (
     ("github", "https://github.com/alvaroof"),
@@ -65,7 +66,7 @@ MENUITEMS = (
 #DISPLAY_TAGS_ON_SIDEBAR = False
 #DISPLAY_TAGS_INLINE = False
 #TAGS_URL='tags.html'
-DISPLAY_CATEGORIES_ON_SIDEBAR=True
+DISPLAY_CATEGORIES_ON_SIDEBAR=False
 DISPLAY_RECENT_POSTS_ON_SIDEBAR=True
 RECENT_POST_COUNT=5
 DISPLAY_ARCHIVE_ON_SIDEBAR=False
@@ -89,8 +90,8 @@ DEFAULT_PAGINATION = 10
 # }
 
 # custom CSS and JS
-#CUSTOM_CSS = 'static/css/custom.css'
-#CUSTOM_JS = 'static/js/custom.js'
+# CUSTOM_CSS = 'static/css/custom.css'
+# CUSTOM_JS = 'static/js/custom.js'
 
 FEED_ALL_ATOM = "feeds/all.atom.xml"
 CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
