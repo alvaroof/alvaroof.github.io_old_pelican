@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Data-Gizmo - Alvaro Ortiz</title><link href="/" rel="alternate"></link><link href="feeds/alvaro-ortiz.atom.xml" rel="self"></link><id>/</id><updated>2020-12-05T19:30:00+01:00</updated><entry><title>This is my Article 1</title><link href="test1.html" rel="alternate"></link><published>2019-06-21T12:00:00+02:00</published><updated>2020-12-05T19:30:00+01:00</updated><author><name>Alvaro Ortiz</name></author><id>tag:None,2019-06-21:test1.html</id><summary type="html">&lt;p&gt;This is the most important tool out there&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Data-Gizmo - Alvaro Ortiz</title><link href="/" rel="alternate"></link><link href="/feeds/alvaro-ortiz.atom.xml" rel="self"></link><id>/</id><updated>2020-12-05T19:30:00+01:00</updated><entry><title>This is my Article 1</title><link href="/test1.html" rel="alternate"></link><published>2019-06-21T12:00:00+02:00</published><updated>2020-12-05T19:30:00+01:00</updated><author><name>Alvaro Ortiz</name></author><id>tag:None,2019-06-21:/test1.html</id><summary type="html">&lt;p&gt;This is the most important tool out there&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -1156,7 +1156,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="misc"></category><category term="tool"></category><category term="software"></category><category term="best"></category></entry><entry><title>This is my Article 2</title><link href="test2.html" rel="alternate"></link><published>2019-06-21T12:00:00+02:00</published><updated>2020-12-05T19:30:00+01:00</updated><author><name>Alvaro Ortiz</name></author><id>tag:None,2019-06-21:test2.html</id><summary type="html">&lt;p&gt;This is the most important tool out there 2&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+</content><category term="misc"></category><category term="tool"></category><category term="software"></category><category term="best"></category></entry><entry><title>This is my Article 2</title><link href="/test2.html" rel="alternate"></link><published>2019-06-21T12:00:00+02:00</published><updated>2020-12-05T19:30:00+01:00</updated><author><name>Alvaro Ortiz</name></author><id>tag:None,2019-06-21:/test2.html</id><summary type="html">&lt;p&gt;This is the most important tool out there 2&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -2683,7 +2683,7 @@ $$log \frac{P(tweet|pos)}{P(tweet|neg)} = log(P(tweet|pos)) - log(P(tweet|neg)) 
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="misc"></category><category term="tool"></category><category term="software"></category><category term="best"></category></entry><entry><title>Hola Mundo</title><link href="hola-mundo.html" rel="alternate"></link><published>2019-05-18T10:30:00+02:00</published><updated>2019-05-18T11:30:00+02:00</updated><author><name>Alvaro Ortiz</name></author><id>tag:None,2019-05-18:hola-mundo.html</id><summary type="html">&lt;p&gt;Mi primer post usando Pelican y GitHub Pages&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Título&lt;/h2&gt;
+</content><category term="misc"></category><category term="tool"></category><category term="software"></category><category term="best"></category></entry><entry><title>Hola Mundo</title><link href="/hola-mundo.html" rel="alternate"></link><published>2019-05-18T10:30:00+02:00</published><updated>2019-05-18T11:30:00+02:00</updated><author><name>Alvaro Ortiz</name></author><id>tag:None,2019-05-18:/hola-mundo.html</id><summary type="html">&lt;p&gt;Mi primer post usando Pelican y GitHub Pages&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Título&lt;/h2&gt;
 &lt;h3&gt;Subtítulo&lt;/h3&gt;
 &lt;p&gt;Este es un ejemplo de texto que da entrada a una lista genérica de elementos:
 - Elemento 1
