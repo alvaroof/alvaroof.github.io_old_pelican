@@ -22,10 +22,10 @@
 
 
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
+        <link rel="stylesheet" href="/theme/css/bootstrap.flatly.min.css" type="text/css"/>
     <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="/theme/css/pygments/monokai.css" rel="stylesheet">
+    <link href="/theme/css/pygments/default.css" rel="stylesheet">
     <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
 
         <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
@@ -36,7 +36,7 @@
 <body>
 
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+    <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -59,7 +59,10 @@ Data-Gizmo            </a>
                             <a href="/category/article.html">Article</a>
                         </li>
                         <li >
-                            <a href="/category/misc.html">Misc</a>
+                            <a href="/category/notebook.html">Notebook</a>
+                        </li>
+                        <li >
+                            <a href="/category/tutorial.html">Tutorial</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -73,47 +76,54 @@ Data-Gizmo            </a>
 <!-- End Banner -->
 
 <!-- Content Container -->
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col-sm-9">
+    <ol class="breadcrumb">
+        <li><a href="" title="Data-Gizmo"><i class="fa fa-home fa-lg"></i></a></li>
+        <li class="active">Tags</li>
+    </ol>
     <section id="tags">
         <h1>Tags for Data-Gizmo</h1>
         <div class="panel-group" id="accordion">            <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-best">best <span class="badge pull-right">2</span></a>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-best">best <span class="badge pull-right">3</span></a>
                     </h4>
                 </div>
                 <div id="collapse-best" class="panel-collapse collapse">
                     <div class="panel-body">
                         <p><span class="categories-timestamp"><time datetime="2019-06-21T12:00:00+02:00">June 21, 2019</time></span> <a href="/test1.html">This is my Article 1</a></p>
                         <p><span class="categories-timestamp"><time datetime="2019-06-21T12:00:00+02:00">June 21, 2019</time></span> <a href="/test2.html">This is my Article 2</a></p>
+                        <p><span class="categories-timestamp"><time datetime="2019-05-18T10:30:00+02:00">May 18, 2019</time></span> <a href="/hola-mundo.html">Hola Mundo</a></p>
                     </div>
                 </div>
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-software">software <span class="badge pull-right">2</span></a>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-software">software <span class="badge pull-right">3</span></a>
                     </h4>
                 </div>
                 <div id="collapse-software" class="panel-collapse collapse">
                     <div class="panel-body">
                         <p><span class="categories-timestamp"><time datetime="2019-06-21T12:00:00+02:00">June 21, 2019</time></span> <a href="/test1.html">This is my Article 1</a></p>
                         <p><span class="categories-timestamp"><time datetime="2019-06-21T12:00:00+02:00">June 21, 2019</time></span> <a href="/test2.html">This is my Article 2</a></p>
+                        <p><span class="categories-timestamp"><time datetime="2019-05-18T10:30:00+02:00">May 18, 2019</time></span> <a href="/hola-mundo.html">Hola Mundo</a></p>
                     </div>
                 </div>
             </div>
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-tool">tool <span class="badge pull-right">2</span></a>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-tool">tool <span class="badge pull-right">3</span></a>
                     </h4>
                 </div>
                 <div id="collapse-tool" class="panel-collapse collapse">
                     <div class="panel-body">
                         <p><span class="categories-timestamp"><time datetime="2019-06-21T12:00:00+02:00">June 21, 2019</time></span> <a href="/test1.html">This is my Article 1</a></p>
                         <p><span class="categories-timestamp"><time datetime="2019-06-21T12:00:00+02:00">June 21, 2019</time></span> <a href="/test2.html">This is my Article 2</a></p>
+                        <p><span class="categories-timestamp"><time datetime="2019-05-18T10:30:00+02:00">May 18, 2019</time></span> <a href="/hola-mundo.html">Hola Mundo</a></p>
                     </div>
                 </div>
             </div>
@@ -123,7 +133,15 @@ Data-Gizmo            </a>
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
-<!-- Sidebar -->
+<div id="aboutme">
+        <p>
+            <img width="100%" class="img-thumbnail" src="/images/avatar.jpg"/>
+        </p>
+    <p>
+      <strong>About Alvaro Ortiz</strong><br/>
+        I am a Physicist recycled into Data Scientist
+    </p>
+</div><!-- Sidebar -->
 <section class="well well-sm">
   <ul class="list-group list-group-flush">
 
@@ -136,6 +154,35 @@ Data-Gizmo            </a>
   </ul>
 </li>
 <!-- End Sidebar/Social -->
+
+<!-- Sidebar/Recent Posts -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
+  <ul class="list-group" id="recentposts">
+    <li class="list-group-item"><a href="/code-test.html">Code Test</a></li>
+    <li class="list-group-item"><a href="/test1.html">This is my Article 1</a></li>
+    <li class="list-group-item"><a href="/test2.html">This is my Article 2</a></li>
+    <li class="list-group-item"><a href="/hola-mundo.html">Hola Mundo</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Recent Posts -->
+
+<!-- Sidebar/Categories -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Categories</span></h4>
+  <ul class="list-group" id="categories">
+    <li class="list-group-item">
+      <a href="/category/article.html"><i class="fa fa-folder-open fa-lg"></i>Article</a>
+    </li>
+    <li class="list-group-item">
+      <a href="/category/notebook.html"><i class="fa fa-folder-open fa-lg"></i>Notebook</a>
+    </li>
+    <li class="list-group-item">
+      <a href="/category/tutorial.html"><i class="fa fa-folder-open fa-lg"></i>Tutorial</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Categories -->
   </ul>
 </section>
 <!-- End Sidebar -->            </aside>
@@ -145,10 +192,10 @@ Data-Gizmo            </a>
 <!-- End Content Container -->
 
 <footer>
-   <div class="container">
+   <div class="container-fluid">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2020 Alvaro Ortiz
+         <div class="col-xs-10">&copy; 2021 Alvaro Ortiz
             &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
@@ -165,6 +212,7 @@ Data-Gizmo            </a>
 <script src="/theme/js/respond.min.js"></script>
 
 
+    <script src="/theme/js/bodypadding.js"></script>
 
 
 </body>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Code Test - Data-Gizmo</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="/code-test.html">
+
+        <meta name="author" content="Alvaro Ortiz" />
+        <meta name="description" content="Mi primer post usando Pelican y GitHub Pages" />
+
+        <meta property="og:site_name" content="Data-Gizmo" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Code Test"/>
+        <meta property="og:url" content="/code-test.html"/>
+        <meta property="og:description" content="Mi primer post usando Pelican y GitHub Pages"/>
+        <meta property="article:published_time" content="2021-05-18" />
+            <meta property="article:section" content="Tutorial" />
+            <meta property="article:author" content="Alvaro Ortiz" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.flatly.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/default.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Data-Gizmo ATOM Feed"/>
+
+        <link href="/feeds/tutorial.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Data-Gizmo Tutorial ATOM Feed"/>
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+Data-Gizmo            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                    <li><a href="/archives.html">Archives</a></li>
+                    <li><a href="/categories.html">Categories</a></li>
+                    <li><a href="/tags.html">Tags</a></li>
+                         <li><a href="/pages/about.html">
+                             About me
+                          </a></li>
+                        <li >
+                            <a href="/category/article.html">Article</a>
+                        </li>
+                        <li >
+                            <a href="/category/notebook.html">Notebook</a>
+                        </li>
+                        <li class="active">
+                            <a href="/category/tutorial.html">Tutorial</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-9">
+            <ol class="breadcrumb">
+                <li><a href="" title="Data-Gizmo"><i class="fa fa-home fa-lg"></i></a></li>
+                <li><a href="/category/tutorial.html" title="Tutorial">Tutorial</a></li>
+                <li class="active">Code Test</li>
+            </ol>
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/code-test.html"
+                       rel="bookmark"
+                       title="Permalink to Code Test">
+                        Code Test
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2021-05-18T10:30:00+02:00"> May 18, 2021</time>
+    </span>
+
+
+            <span class="label label-default">By</span>
+            <a href="/author/alvaro-ortiz.html"><i class="fa fa-user"></i> Alvaro Ortiz</a>
+
+        <span class="label label-default">Category</span>
+        <a href="/category/tutorial.html">Tutorial</a>
+
+
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <h1>This is just the Title inside the Markdown</h1>
+<div class="highlight"><pre><span></span><span class="c1">################################################################################</span>
+<span class="c1"># OS FUNCTIONALITIES</span>
+<span class="c1"># PROXY PROBLEMS, SSL PROBLEMS, AND OTHER CALAMITIES</span>
+<span class="c1"># CONVERT jupyter notebooks to other formats</span>
+<span class="c1"># MAGIC FUNCTIONS</span>
+<span class="c1"># PROBLEMS LOADING CUSTOM MODULES</span>
+<span class="c1"># USE CUSTOM PARAMETERS IN PYTHON SCRIPTS</span>
+<span class="c1"># PICKLE</span>
+<span class="c1"># PROGRESS BAR</span>
+<span class="c1"># ZIPS</span>
+<span class="c1"># CODE CHECKS</span>
+<span class="c1"># add value to variable, such as path</span>
+<span class="c1"># GIT CALAMITIES</span>
+<span class="c1"># Read data from github repo using requests</span>
+<span class="c1">################################################################################</span>
+
+<span class="c1">################################################################################</span>
+<span class="c1"># OS FUNCTIONALITIES</span>
+<span class="c1">################################################################################</span>
+
+<span class="c1">##Display environmental variables</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="o">%</span><span class="n">env</span>
+
+<span class="c1">## Check if file or dir exists</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="s1">&#39;./final_data_folder&#39;</span><span class="p">)</span>
+<span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">directory</span><span class="p">)</span>
+<span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s1">&#39;./final_data_2020.csv&#39;</span><span class="p">)</span>
+
+<span class="c1">## Remove file or dir</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">&quot;ChangedFile.csv&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;File Removed!&quot;</span><span class="p">)</span>
+
+<span class="c1">## only if dir is empty</span>
+<span class="n">os</span><span class="o">.</span><span class="n">rmdir</span><span class="p">()</span>
+
+<span class="c1">################################################################################</span>
+<span class="c1"># PROXY PROBLEMS AND OTHER CALAMITIES</span>
+<span class="c1">################################################################################</span>
+
+<span class="c1"># BUT WHAT HAPPENS WHEN YOUR USER AND PASSWORD HAVE SPECIAL CHARCTERS?</span>
+<span class="c1"># YOU NEED TO ENCODE THEM!</span>
+<span class="kn">from</span> <span class="nn">urllib.parse</span> <span class="kn">import</span> <span class="n">quote</span>
+
+<span class="n">username</span> <span class="o">=</span> <span class="n">quote</span><span class="p">(</span><span class="s1">&#39;type your user&#39;</span><span class="p">)</span>
+<span class="n">password</span> <span class="o">=</span> <span class="n">quote</span><span class="p">(</span><span class="s1">&#39;type your password&#39;</span><span class="p">)</span>
+<span class="n">proxy</span> <span class="o">=</span> <span class="s1">&#39;proxy address or IP&#39;</span>
+<span class="n">proxy_port</span> <span class="o">=</span> <span class="s1">&#39;port&#39;</span>
+
+<span class="n">proxy_http</span> <span class="o">=</span> <span class="s1">&#39;http://&#39;</span> <span class="o">+</span> <span class="n">username</span> <span class="o">+</span> <span class="s1">&#39;:&#39;</span> <span class="o">+</span> <span class="n">password</span> <span class="o">+</span> <span class="s1">&#39;@&#39;</span> <span class="o">+</span> <span class="n">proxy</span> <span class="o">+</span> <span class="s1">&#39;:&#39;</span> <span class="o">+</span> <span class="n">proxy_port</span>
+<span class="n">proxy_https</span> <span class="o">=</span> <span class="s1">&#39;https://&#39;</span> <span class="o">+</span> <span class="n">username</span> <span class="o">+</span> <span class="s1">&#39;:&#39;</span> <span class="o">+</span> <span class="n">password</span> <span class="o">+</span> <span class="s1">&#39;@&#39;</span> <span class="o">+</span> <span class="n">proxy</span> <span class="o">+</span> <span class="s1">&#39;:&#39;</span> <span class="o">+</span> <span class="n">proxy_port</span>
+
+<span class="c1"># THEN WE HAVE TWO OPTIONS</span>
+
+<span class="c1"># 1. the first solution is more specific, just modify proxy for one specific request</span>
+<span class="n">proxies</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;http&#39;</span> <span class="p">:</span> <span class="n">proxy_http</span><span class="p">,</span> <span class="s1">&#39;https&#39;</span><span class="p">:</span> <span class="n">proxy_https</span><span class="p">}</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://google.com&#39;</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">proxies</span><span class="o">=</span><span class="n">proxies</span><span class="p">)</span>
+
+<span class="c1"># 2. this is an all-purpose every-request solution</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;http_proxy&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">proxy_http</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;https_proxy&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">proxy_https</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://google.com&#39;</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+
+
+<span class="c1">#calling pip behind proxy</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">proxy</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">user</span><span class="p">:</span><span class="n">password</span><span class="o">@</span><span class="mf">10.185.190.100</span><span class="p">:</span><span class="mi">8080</span> <span class="n">torch</span>
+
+<span class="c1"># IF in pycharm there is a problem with the SSL certificate when downloading packages</span>
+<span class="c1"># add the following to %APPDATA%/pip/pip.ini</span>
+
+<span class="p">[</span><span class="k">global</span><span class="p">]</span>
+<span class="n">trusted</span><span class="o">-</span><span class="n">host</span> <span class="o">=</span> <span class="n">pypi</span><span class="o">.</span><span class="n">python</span><span class="o">.</span><span class="n">org</span>
+               <span class="n">pypi</span><span class="o">.</span><span class="n">org</span>
+               <span class="n">files</span><span class="o">.</span><span class="n">pythonhosted</span><span class="o">.</span><span class="n">org</span>
+
+<span class="c1">#################################################################################</span>
+<span class="c1"># CONVERT jupyter notebooks to other formats</span>
+<span class="c1">################################################################################</span>
+
+<span class="c1">#convert notebook to other formats</span>
+<span class="n">jupyter</span> <span class="n">nbconvert</span> <span class="o">--</span><span class="n">to</span> <span class="n">html</span> <span class="n">my_notebook</span><span class="o">.</span><span class="n">ipynb</span>
+<span class="n">jupyter</span> <span class="n">nbconvert</span> <span class="o">--</span><span class="n">to</span> <span class="n">script</span> <span class="o">.</span>\<span class="n">tpa_analytics_nlp_analysis_v2</span><span class="o">.</span><span class="n">ipynb</span>
+
+<span class="c1">#################################</span>
+<span class="c1"># MAGIC FUNCTIONS</span>
+<span class="c1">#################################</span>
+
+<span class="c1">#tracks how long this takes to run</span>
+<span class="o">%</span><span class="n">time</span> <span class="c1">#only this line</span>
+<span class="o">%%</span><span class="n">time</span> <span class="c1">#all the code in the cell</span>
+
+<span class="c1">####################################</span>
+<span class="c1"># PROBLEMS LOADING CUSTOM MODULES</span>
+<span class="c1">####################################</span>
+
+<span class="n">module_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">))</span>
+<span class="k">if</span> <span class="n">module_path</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">module_path</span><span class="p">)</span>
+
+<span class="c1"># After this just do the following</span>
+
+<span class="kn">from</span> <span class="nn">project1.module1</span> <span class="kn">import</span> <span class="n">whatever_module</span>
+
+<span class="c1">########################################################</span>
+<span class="c1"># USE CUSTOM PARAMETERS IN PYTHON SCRIPTS</span>
+<span class="c1">###########################################################</span>
+
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">argparse</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+
+    <span class="c1"># Initiate the parser</span>
+    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">()</span>
+
+    <span class="c1"># Add long and short argument</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--width&quot;</span><span class="p">,</span> <span class="s2">&quot;-w&quot;</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;set output width&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Read arguments from the command line</span>
+    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Parameters...</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="o">.</span><span class="n">width</span><span class="p">)</span>
+
+<span class="c1"># This allows to define width when running from shell --&gt; python main.py --width 3</span>
+
+<span class="c1">########################################################</span>
+<span class="c1"># USE PYTHON VARS AS BASH PARAMETERS INSIDE NOTEBOOK</span>
+<span class="c1">###########################################################</span>
+
+<span class="o">%%</span><span class="n">bash</span> <span class="o">-</span><span class="n">s</span> <span class="s2">&quot;$output_filename&quot;</span> <span class="s2">&quot;$shiny_destination&quot;</span>
+
+<span class="n">echo</span> <span class="s2">&quot;Copying $1 into $2&quot;</span>
+<span class="n">cp</span> <span class="err">$</span><span class="mi">1</span> <span class="err">$</span><span class="mi">2</span>
+
+<span class="c1">#####################################</span>
+<span class="c1"># PICKLE</span>
+<span class="c1">#####################################</span>
+
+<span class="kn">import</span> <span class="nn">pickle</span> 
+<span class="n">python_object</span> <span class="o">=</span> <span class="nb">object</span><span class="p">()</span> 
+<span class="n">file_object</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;filename_pi.obj&#39;</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> 
+<span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">python_object</span><span class="p">,</span> <span class="n">file_object</span><span class="p">)</span>
+
+<span class="n">file_object</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;filename_pi.obj&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> 
+<span class="n">python_object</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file_object</span><span class="p">)</span>
+
+<span class="c1"># or using PANDAS</span>
+<span class="n">original_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;foo&quot;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">),</span> <span class="s2">&quot;bar&quot;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">)})</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">to_pickle</span><span class="p">(</span><span class="n">original_df</span><span class="p">,</span> <span class="s2">&quot;./dummy.pkl&quot;</span><span class="p">)</span>
+<span class="n">unpickled_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_pickle</span><span class="p">(</span><span class="s2">&quot;./dummy.pkl&quot;</span><span class="p">)</span>
+
+<span class="c1">#####################################</span>
+<span class="c1"># PROGRESSBAR</span>
+<span class="c1">#####################################</span>
+<span class="c1">#How to create PROGRESSBAR beyond tqdm()</span>
+<span class="kn">import</span> <span class="nn">progressbar</span>
+
+<span class="c1"># How many users for progress bar</span>
+<span class="n">n_users</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">users</span><span class="p">)</span>
+<span class="n">cnter</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">bar</span> <span class="o">=</span> <span class="n">progressbar</span><span class="o">.</span><span class="n">ProgressBar</span><span class="p">(</span><span class="n">maxval</span><span class="o">=</span><span class="n">n_users</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">widgets</span><span class="o">=</span><span class="p">[</span><span class="n">progressbar</span><span class="o">.</span><span class="n">Bar</span><span class="p">(</span><span class="s1">&#39;=&#39;</span><span class="p">,</span> <span class="s1">&#39;[&#39;</span><span class="p">,</span> <span class="s1">&#39;]&#39;</span><span class="p">),</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">progressbar</span><span class="o">.</span><span class="n">Percentage</span><span class="p">()])</span>
+<span class="n">bar</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+<span class="c1"># For each user</span>
+<span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">users</span><span class="p">:</span>
+    <span class="c1"># Update the progress bar</span>
+    <span class="n">cnter</span><span class="o">+=</span><span class="mi">1</span> 
+    <span class="c1">#DO SOMETHING</span>
+    <span class="n">bar</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">cnter</span><span class="p">)</span>
+
+<span class="n">bar</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
+
+<span class="c1">#####################################</span>
+<span class="c1"># ZIPS</span>
+<span class="c1">#####################################</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">zipfile</span>
+
+<span class="n">local_zip</span> <span class="o">=</span> <span class="s1">&#39;/tmp/horse-or-human.zip&#39;</span>
+<span class="n">zip_ref</span> <span class="o">=</span> <span class="n">zipfile</span><span class="o">.</span><span class="n">ZipFile</span><span class="p">(</span><span class="n">local_zip</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">zip_ref</span><span class="o">.</span><span class="n">extractall</span><span class="p">(</span><span class="s1">&#39;/tmp/horse-or-human&#39;</span><span class="p">)</span>
+<span class="n">zip_ref</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="c1">#######################################################################</span>
+<span class="c1"># CODE CHECKS</span>
+<span class="c1">#######################################################################</span>
+
+<span class="c1">#USE PYLINT!</span>
+<span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">docs</span><span class="o">.</span><span class="n">pylint</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">en</span><span class="o">/</span><span class="mf">1.6.0</span><span class="o">/</span><span class="n">tutorial</span><span class="o">.</span><span class="n">html</span>
+
+
+<span class="c1">###############################################################</span>
+<span class="c1"># add value to variable, such as path</span>
+<span class="c1">###############################################################</span>
+
+<span class="n">PATH</span><span class="o">=~/</span><span class="n">opt</span><span class="o">/</span><span class="nb">bin</span><span class="p">:</span><span class="err">$</span><span class="n">PATH</span><span class="o">.</span>
+
+<span class="c1">###############################################################</span>
+<span class="c1"># GIT CALAMITIES</span>
+<span class="c1">################################################################################</span>
+
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="o">--</span><span class="n">unset</span><span class="o">-</span><span class="nb">all</span> <span class="n">http</span><span class="o">.</span><span class="n">proxy</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="o">--</span><span class="n">add</span> <span class="n">http</span><span class="o">.</span><span class="n">proxy</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">USER</span><span class="p">:</span><span class="n">PASSWORD</span><span class="o">@</span><span class="mf">10.185.190.100</span><span class="p">:</span><span class="mi">8080</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="o">--</span><span class="n">unset</span><span class="o">-</span><span class="nb">all</span> <span class="n">https</span><span class="o">.</span><span class="n">proxy</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="o">--</span><span class="n">add</span> <span class="n">https</span><span class="o">.</span><span class="n">proxy</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">USER</span><span class="p">:</span><span class="n">PASSWORD</span><span class="o">@</span><span class="mf">10.185.190.100</span><span class="p">:</span><span class="mi">8080</span>
+
+<span class="c1"># Issue authenticating to 2FA in gitlab. Need to deactivate SSL check, and if you fail to enter</span>
+<span class="c1"># the personal access token at the beginning, then probably you will need to also unset the cresential.helper and retry</span>
+
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">http</span><span class="o">.</span><span class="n">sslVerify</span> <span class="n">false</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="n">system</span> <span class="o">--</span><span class="n">unset</span> <span class="n">credential</span><span class="o">.</span><span class="n">helper</span>
+
+
+<span class="c1">#######################################################################</span>
+<span class="c1"># READ FROM WEB</span>
+<span class="c1">#######################################################################</span>
+
+<span class="c1"># load global data but US</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv&#39;</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">content</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">io</span><span class="o">.</span><span class="n">StringIO</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)))</span>
+
+<span class="c1">#######################################################################</span>
+<span class="c1"># READ DATA FROM GDRIVE</span>
+<span class="c1">#######################################################################</span>
+
+<span class="c1"># Run this cell to connect to your Drive folder</span>
+<span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
+<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/gdrive&#39;</span><span class="p">)</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/content/gdrive/My Drive/colab/processed_SERVICE.CLIENTS.PHARMACIE@BAYER.COM_extract_2021-03-02.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+</pre></div>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<div id="aboutme">
+        <p>
+            <img width="100%" class="img-thumbnail" src="/images/avatar.jpg"/>
+        </p>
+    <p>
+      <strong>About Alvaro Ortiz</strong><br/>
+        I am a Physicist recycled into Data Scientist
+    </p>
+</div><!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://github.com/alvaroof"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+    <li class="list-group-item"><a href="https://linkedin.com/in/alvaroof"><i class="fa fa-linkedin-square fa-lg"></i> linkedin</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+
+<!-- Sidebar/Recent Posts -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
+  <ul class="list-group" id="recentposts">
+    <li class="list-group-item"><a href="/code-test.html">Code Test</a></li>
+    <li class="list-group-item"><a href="/test1.html">This is my Article 1</a></li>
+    <li class="list-group-item"><a href="/test2.html">This is my Article 2</a></li>
+    <li class="list-group-item"><a href="/hola-mundo.html">Hola Mundo</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Recent Posts -->
+
+<!-- Sidebar/Categories -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Categories</span></h4>
+  <ul class="list-group" id="categories">
+    <li class="list-group-item">
+      <a href="/category/article.html"><i class="fa fa-folder-open fa-lg"></i>Article</a>
+    </li>
+    <li class="list-group-item">
+      <a href="/category/notebook.html"><i class="fa fa-folder-open fa-lg"></i>Notebook</a>
+    </li>
+    <li class="list-group-item">
+      <a href="/category/tutorial.html"><i class="fa fa-folder-open fa-lg"></i>Tutorial</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Categories -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container-fluid">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2021 Alvaro Ortiz
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+
+    <script src="/theme/js/bodypadding.js"></script>
+
+
+</body>
+</html>

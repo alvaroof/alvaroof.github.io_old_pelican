@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Categories - Data-Gizmo</title>
+    <title>Tutorial - Data-Gizmo</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -10,7 +10,8 @@
 
 
 
-        <meta name="author" content="Alvaro Ortiz" />
+    <meta name="author" content="Alvaro Ortiz" />
+    <meta name="keywords" content="Tutorial" />
 
     <!-- Open Graph tags -->
         <meta property="og:site_name" content="Data-Gizmo" />
@@ -31,7 +32,8 @@
         <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
               title="Data-Gizmo ATOM Feed"/>
 
-
+        <link href="/feeds/tutorial.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Data-Gizmo Tutorial ATOM Feed"/>
 </head>
 <body>
 
@@ -61,7 +63,7 @@ Data-Gizmo            </a>
                         <li >
                             <a href="/category/notebook.html">Notebook</a>
                         </li>
-                        <li >
+                        <li class="active">
                             <a href="/category/tutorial.html">Tutorial</a>
                         </li>
             </ul>
@@ -81,51 +83,34 @@ Data-Gizmo            </a>
         <div class="col-sm-9">
     <ol class="breadcrumb">
         <li><a href="" title="Data-Gizmo"><i class="fa fa-home fa-lg"></i></a></li>
-        <li class="active">Categories</li>
+        <li><a href="/" title="Data-Gizmo Categories">Categories</a></li>
+        <li class="active">Tutorial</li>
     </ol>
-    <section id="categories">
-      <h1>All Categories for Data-Gizmo</h1>
-        <div class="panel-group" id="accordion">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-article">Article <span class="badge pull-right">1</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-article" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2019-05-18T10:30:00+02:00">May 18, 2019</time></span> <a href="/hola-mundo.html">Hola Mundo</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-notebook">Notebook <span class="badge pull-right">2</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-notebook" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2019-06-21T12:00:00+02:00">June 21, 2019</time></span> <a href="/test1.html">This is my Article 1</a></p>
-                        <p><span class="categories-timestamp"><time datetime="2019-06-21T12:00:00+02:00">June 21, 2019</time></span> <a href="/test2.html">This is my Article 2</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-tutorial">Tutorial <span class="badge pull-right">1</span></a>
-                    </h4>
-                </div>
-                <div id="collapse-tutorial" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p><span class="categories-timestamp"><time datetime="2021-05-18T10:30:00+02:00">May 18, 2021</time></span> <a href="/code-test.html">Code Test</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <article>
+                <h2><a href="/code-test.html">Code Test</a></h2>
+                    <div class="well well-sm">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2021-05-18T10:30:00+02:00"> May 18, 2021</time>
+    </span>
 
-    </section>
+
+            <span class="label label-default">By</span>
+            <a href="/author/alvaro-ortiz.html"><i class="fa fa-user"></i> Alvaro Ortiz</a>
+
+        <span class="label label-default">Category</span>
+        <a href="/category/tutorial.html">Tutorial</a>
+
+
+    
+</footer><!-- /.post-info -->                    </div>
+                <div class="summary"><p>Mi primer post usando Pelican y GitHub Pages</p>
+                    <a class="btn btn-default btn-xs" href="/code-test.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
@@ -156,9 +141,6 @@ Data-Gizmo            </a>
   <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
   <ul class="list-group" id="recentposts">
     <li class="list-group-item"><a href="/code-test.html">Code Test</a></li>
-    <li class="list-group-item"><a href="/test1.html">This is my Article 1</a></li>
-    <li class="list-group-item"><a href="/test2.html">This is my Article 2</a></li>
-    <li class="list-group-item"><a href="/hola-mundo.html">Hola Mundo</a></li>
   </ul>
 </li>
 <!-- End Sidebar/Recent Posts -->
