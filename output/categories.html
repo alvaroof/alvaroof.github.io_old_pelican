@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+    <link href="/images/my_site_logo.jpg" rel="icon">
 
 
         <meta name="author" content="Alvaro Ortiz" />
@@ -22,10 +23,10 @@
 
 
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
+        <link rel="stylesheet" href="/theme/css/bootstrap.flatly.min.css" type="text/css"/>
     <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="/theme/css/pygments/monokai.css" rel="stylesheet">
+    <link href="/theme/css/pygments/default.css" rel="stylesheet">
     <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
 
         <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
@@ -36,7 +37,7 @@
 <body>
 
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+    <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -59,7 +60,10 @@ Data-Gizmo            </a>
                             <a href="/category/article.html">Article</a>
                         </li>
                         <li >
-                            <a href="/category/misc.html">Misc</a>
+                            <a href="/category/notebook.html">Notebook</a>
+                        </li>
+                        <li >
+                            <a href="/category/tutorial.html">Tutorial</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -73,9 +77,13 @@ Data-Gizmo            </a>
 <!-- End Banner -->
 
 <!-- Content Container -->
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col-sm-9">
+    <ol class="breadcrumb">
+        <li><a href="" title="Data-Gizmo"><i class="fa fa-home fa-lg"></i></a></li>
+        <li class="active">Categories</li>
+    </ol>
     <section id="categories">
       <h1>All Categories for Data-Gizmo</h1>
         <div class="panel-group" id="accordion">
@@ -94,13 +102,25 @@ Data-Gizmo            </a>
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-misc">misc <span class="badge pull-right">2</span></a>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-notebook">Notebook <span class="badge pull-right">2</span></a>
                     </h4>
                 </div>
-                <div id="collapse-misc" class="panel-collapse collapse">
+                <div id="collapse-notebook" class="panel-collapse collapse">
                     <div class="panel-body">
                         <p><span class="categories-timestamp"><time datetime="2019-06-21T12:00:00+02:00">June 21, 2019</time></span> <a href="/test1.html">This is my Article 1</a></p>
                         <p><span class="categories-timestamp"><time datetime="2019-06-21T12:00:00+02:00">June 21, 2019</time></span> <a href="/test2.html">This is my Article 2</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-tutorial">Tutorial <span class="badge pull-right">1</span></a>
+                    </h4>
+                </div>
+                <div id="collapse-tutorial" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <p><span class="categories-timestamp"><time datetime="2021-05-18T10:30:00+02:00">May 18, 2021</time></span> <a href="/code-test.html">Code Test</a></p>
                     </div>
                 </div>
             </div>
@@ -110,7 +130,15 @@ Data-Gizmo            </a>
         </div>
         <div class="col-sm-3" id="sidebar">
             <aside>
-<!-- Sidebar -->
+<div id="aboutme">
+        <p>
+            <img width="100%" class="img-thumbnail" src="/images/my_site_logo.jpg"/>
+        </p>
+    <p>
+      <strong>About Alvaro Ortiz</strong><br/>
+        I am a Physicist recycled into Data Scientist
+    </p>
+</div><!-- Sidebar -->
 <section class="well well-sm">
   <ul class="list-group list-group-flush">
 
@@ -132,10 +160,10 @@ Data-Gizmo            </a>
 <!-- End Content Container -->
 
 <footer>
-   <div class="container">
+   <div class="container-fluid">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2020 Alvaro Ortiz
+         <div class="col-xs-10">&copy; 2021 Alvaro Ortiz
             &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>

@@ -1,41 +1,42 @@
+# https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3
+
 from datetime import datetime
 
 AUTHOR = 'Alvaro Ortiz'
 SITENAME = 'Data-Gizmo'
+HIDE_SITENAME = False
 SITEURL = 'http://alvaroof.github.io'
-SITETITLE = "Data-Gizmo"
-# SITESUBTITLE = "The minimalist Pelican theme"
-# SITEDESCRIPTION = "Flex - The minimalist Pelican theme."
-# SITELOGO = ''
-# FAVICON = '/images/favicon.ico'
-BROWSER_COLOR = "#333333"
-PYGMENTS_STYLE = "monokai"
-
-# ROBOTS = "index, follow"
-
-#THEME = "Flex"
-#THEME = "pelican-blue"
-THEME = "pelican-bootstrap3"
+#SITELOGO = 'images/my_site_logo.jpg'
+#SITELOGO_SIZE = 80
+#FAVICON = 'images/my_site_logo.jpg'
+AVATAR='images/avatar.jpg'
+ABOUT_ME="I am a Physicist recycled into Data Scientist"
+PADDED_SINGLE_COLUMN_STYLE = False
+BANNER = 'images/banner.jpg'
+BANNER_SUBTITLE = 'This is my subtitle for my Banner'
+BANNER_ALL_PAGES = False
 
 PATH = "content"
 OUTPUT_PATH = "output"
 TIMEZONE = "Europe/Madrid"
 
-# DISABLE_URL_HASH = True
+BROWSER_COLOR = "#333333"
+PYGMENTS_STYLE = "default" #check on https://pygments.org/demo/
+THEME = "pelican-bootstrap3"
+BOOTSTRAP_THEME = 'flatly' # https://bootswatch.com/
+BOOTSTRAP_FLUID = True
+DISPLAY_BREADCRUMBS=True
+DISPLAY_CATEGORY_IN_BREADCRUMBS=True
+BOOTSTRAP_NAVBAR_INVERSE = False
+DISPLAY_ARTICLE_INFO_ON_INDEX=True
 
 MARKUP = ("md", "ipynb")
-
 from pelican_jupyter import markup as nb_markup
 PLUGIN_PATHS = ['pelican-plugins']
-
 PLUGINS = ['i18n_subsites', nb_markup]
-
 IGNORE_FILES = [".ipynb_checkpoints"]
 
-# JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
-# Enable Jinja2 i18n extension used to parse translations.
 JINJA_ENVIRONMENT = {"extensions": ["jinja2.ext.i18n"]}
-
 I18N_TEMPLATES_LANG = "en"
 DEFAULT_LANG = "en"
 OG_LOCALE = "en_US"
@@ -45,15 +46,10 @@ DATE_FORMATS = {
     "en": "%B %d, %Y",
 }
 
-FEED_ALL_ATOM = "feeds/all.atom.xml"
-CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
-#TRANSLATION_FEED_ATOM = None
-#AUTHOR_FEED_ATOM = None
-#AUTHOR_FEED_RSS = None
-
 USE_FOLDER_AS_CATEGORY = False
-#MAIN_MENU = True
-#HOME_HIDE_TAGS = True
+MAIN_MENU = True
+SHOW_ARTICLE_AUTHOR = True
+SHOW_ARTICLE_CATEGORY = True
 
 SOCIAL = (
     ("github", "https://github.com/alvaroof"),
@@ -66,27 +62,51 @@ MENUITEMS = (
     ("Tags", "/tags.html"),
 )
 
+#DISPLAY_TAGS_ON_SIDEBAR = False
+#DISPLAY_TAGS_INLINE = False
+#TAGS_URL='tags.html'
+DISPLAY_CATEGORIES_ON_SIDEBAR=True
+DISPLAY_RECENT_POSTS_ON_SIDEBAR=True
+RECENT_POST_COUNT=5
+DISPLAY_ARCHIVE_ON_SIDEBAR=False
+DISPLAY_AUTHORS_ON_SIDEBAR=False
+
 COPYRIGHT_YEAR = datetime.now().year
 DEFAULT_PAGINATION = 10
 
-#DISQUS_SITENAME = "flex-pelican"
-#ADD_THIS_ID = "ra-55adbb025d4f7e55"
+# # Tell Pelican to add files from 'extra' to the output dir
+# STATIC_PATHS = [
+#   'images',
+#   'extra',
+#   "extra/CNAME"
+# ]
 
-#STATIC_PATHS = ["images", "extra/ads.txt", "extra/CNAME"]
+# # Tell Pelican to change the path to 'static/custom.css' in the output dir
+# EXTRA_PATH_METADATA = {
+#     'extra/custom.css': {'path': 'static/css/custom.css'},
+#     'extra/custom.js': {'path': 'static/js/custom.js'},
+#     "extra/CNAME": {"path": "CNAME"}
+# }
 
-#EXTRA_PATH_METADATA = {
-#    "extra/ads.txt": {"path": "ads.txt"},
-#    "extra/CNAME": {"path": "CNAME"},
-#}
+# custom CSS and JS
+#CUSTOM_CSS = 'static/css/custom.css'
+#CUSTOM_JS = 'static/js/custom.js'
 
-# THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True
-# THEME_COLOR_ENABLE_USER_OVERRIDE = True
+FEED_ALL_ATOM = "feeds/all.atom.xml"
+CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
+# FEED_ALL_ATOM
+# FEED_ALL_RSS
+# DISPLAY_PAGES_ON_MENU
+# DISPLAY_CATEGORIES_ON_MENU
+# MENUITEMS
+# LINKS
 
-# USE_LESS = True
-
-# pelican-blue
-# SIDEBAR_DIGEST = 'Programmer and Web Developer'
-# FAVICON = 'url-to-favicon'
-# DISPLAY_PAGES_ON_MENU = True
-# TWITTER_USERNAME = 'twitter-user-name'
-# MENUITEMS = (('Blog', SITEURL),)
+# Analytics & Comments
+# GOOGLE_ANALYTICS
+# GOOGLE_ANALYTICS_UNIVERSAL
+# GOOGLE_ANALYTICS_UNIVERSAL_PROPERTY
+# DISQUS_SITENAME
+# PIWIK_URL
+# PIWIK_SSL_URL
+# PIWIK_SITE_ID
+# TAG_CLOUD_MAX_ITEMS

@@ -2,6 +2,7 @@ Title: Hola Mundo
 Date: 2019-05-18 10:30
 Modified: 2019-05-18 11:30
 Category: Article
+Tags: tool, software, best
 Slug: hola-mundo
 Authors: Alvaro Ortiz
 Summary: Mi primer post usando Pelican y GitHub Pages
