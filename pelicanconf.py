@@ -4,6 +4,7 @@ from datetime import datetime
 
 AUTHOR = 'Alvaro Ortiz'
 SITENAME = 'Data-Gizmo'
+SITESUBTITLE  = 'All my data nightmares'
 HIDE_SITENAME = True
 SITEURL = 'http://alvaroof.github.io'
 #SITELOGO = 'images/my_site_logo.jpg'
@@ -22,7 +23,8 @@ TIMEZONE = "Europe/Madrid"
 
 BROWSER_COLOR = "#333333"
 PYGMENTS_STYLE = "default" #check on https://pygments.org/demo/
-THEME = "pelican-bootstrap3"
+#THEME = "pelican-bootstrap3"
+THEME = 'future-imperfect'
 BOOTSTRAP_THEME = 'flatly' # https://bootswatch.com/
 BOOTSTRAP_FLUID = True
 DISPLAY_BREADCRUMBS=True
@@ -73,7 +75,7 @@ DISPLAY_ARCHIVE_ON_SIDEBAR=False
 DISPLAY_AUTHORS_ON_SIDEBAR=False
 
 COPYRIGHT_YEAR = datetime.now().year
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 5
 
 # # Tell Pelican to add files from 'extra' to the output dir
 # STATIC_PATHS = [
