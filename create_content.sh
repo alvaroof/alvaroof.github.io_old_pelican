@@ -3,7 +3,8 @@
 NUM_POSTS=20
 CONTENT_DIR=content
 LOREM_API=https://jaspervdj.be/lorem-markdownum/markdown.txt
-IMAGES_API=https://placeimg.com/1000/341/animals
+# IMAGES_API=https://placeimg.com/1000/341/animals
+IMAGES_API=https://placeimg.com/500/200/tech/grayscale
 
 rm -fR content
 mkdir -p content/images
