@@ -1,6 +1,6 @@
 Title: A sample article 13
 Date: 2021-03-13
-Category: News
+Category: Not News
 Tags: tag19,tag18,tag11
 Image: post13.jpg
 Summary: Summary of post 13

@@ -1,17 +1,17 @@
 <!DOCTYPE HTML>
 <!--
-	Data-Gizmo by HTML5 UP
+	{{ SITENAME }} by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
-		<title>Data-Gizmo by HTML5 UP</title>
+		<title>{{ SITENAME }} by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/theme/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="/theme/css/main.css" />
+		<link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" />
 	</head>
 	<body class="is-preload">
 
@@ -20,12 +20,12 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="index.html">Data-Gizmo</a></h1>
+						<h1><a href="index.html">{{ SITENAME }}</a></h1>
 						<nav class="links">
 							<ul>
-					            	<li><a href="/archives.html">Archives</a></li>
-					            	<li><a href="/categories.html">Categories</a></li>
-					            	<li><a href="/tags.html">Tags</a></li>
+								{% for name, link in MENUITEMS %}
+					            	<li><a href="{{ link }}">{{ name }}</a></li>
+						        {% endfor %}
 							</ul>
 						</nav>
 						<nav class="main">
@@ -96,38 +96,16 @@
 					<div id="main">
 				<!-- Main -->
 
-				        <!-- Post -->
-				        <article class="post">
-				          <header>
-				            <div class="title">
-				              <h2><a href="a-sample-article-13.html">A sample article 13</a></h2>
-				            </div>
-				            <div class="meta">
-				              <time class="published" datetime="2021-03-13">Mar 13, 2021</time>
-				              <a href="#" class="author"><span class="name">Alvaro Ortiz</span><img src="/theme/images/avatar.jpg" alt="" /></a>
-				            </div>
-				          </header>
-				          <a href="a-sample-article-13.html" class="image featured"><img src="/images/post13.jpg" alt="" /></a>
-				          <p>Summary of post 13</p>
-				          <footer>
-				            <ul class="actions">
-				              <li><a href="a-sample-article-13.html" class="button large">Continue Reading</a></li>
-				            </ul>
-				            <ul class="stats">
-				              <li><a href="#">tag19</a></li>
-				              <li><a href="#">tag18</a></li>
-				              <li><a href="#">tag11</a></li>
-				            </ul>
-				          </footer>
-				        </article>
-
-				        <!-- Pagination -->
-				        <ul class="actions pagination">
-							  <li><a href="" class="disabled button large previous">Previous Page</a></li>
-						  
-							  <li><a href="#" class="disabled button large next">Next Page</a></li>
-						</ul>
-
+				<section id="archives">
+					<h1>{{ _('All Articles in')  }}{{ SITENAME }}</h1>
+						  {% for article in articles %}
+						  <div> 
+								<span class="categories-timestamp"><time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></span> <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+							</div>
+						  {% endfor %}
+			  
+			  
+				  </section>
 					</div>
 
 				<!-- Sidebar -->
@@ -135,15 +113,16 @@
 
 						<!-- Intro -->
 							<section id="intro">
-								<a href="#" class="logo"><img src="/theme/images/logo.jpg" alt="" /></a>
+								<a href="#" class="logo"><img src="{{ SITEURL}}/theme/images/logo.jpg" alt="" /></a>
 								<header>
-									<h2>Data-Gizmo</h2>
-									<p>All my data nightmares</p>
-									<p>Europe/Madrid</a></p>
+									<h2>{{ SITENAME }}</h2>
+									<p>{{ SITESUBTITLE }}</p>
+									<p>{{ TIMEZONE }}</a></p>
 								</header>
 								<ul class="icons">
-						            	<li><a href="https://github.com/alvaroof" class="icon brands fa-github"><span class="label">github</span></a></li>
-						            	<li><a href="https://linkedin.com/in/alvaroof" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+						            {% for name, link in SOCIAL %}
+						            	<li><a href="{{ link }}" class="icon brands fa-{{ name }}"><span class="label">{{ name }}</span></a></li>
+						            {% endfor %}
 								</ul>
 							</section>
 
@@ -151,15 +130,17 @@
 							<section>
 							  <div class="mini-posts">
 
+							    {% for article in articles[:4] %}
 							    <!-- Mini Post -->
 							    <article class="mini-post">
 							      <header>
-							        <h3><a href="single.html">A sample article 13</a></h3>
-							        <time class="published" datetime="2021-03-13">Mar 13, 2021</time>
-							        <a href="#" class="author"><img src="/theme/images/avatar.jpg" alt="" /></a>
+							        <h3><a href="single.html">{{ article.title }}</a></h3>
+							        <time class="published" datetime="{{ article.date | strftime('%Y-%m-%d') }}">{{ article.date | strftime('%b %-d, %Y') }}</time>
+							        <a href="#" class="author"><img src="{{ SITEURL }}/theme/images/avatar.jpg" alt="" /></a>
 							      </header>
-							      <a href="single.html" class="image"><img src="images/post13.jpg" alt="" /></a>
+							      <a href="single.html" class="image"><img src="images/{{ article.image }}" alt="" /></a>
 							    </article>
+							    {% endfor %}
 
 							  </div>
 							</section>
@@ -171,6 +152,7 @@
 									<li><a href="#" class="button">Learn More</a></li>
 								</ul>
 							</section>
+
 						<!-- Footer -->
 							<section id="footer">
 								<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
@@ -181,11 +163,11 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="/theme/js/jquery.min.js"></script>
-			<script src="/theme/js/browser.min.js"></script>
-			<script src="/theme/js/breakpoints.min.js"></script>
-			<script src="/theme/js/util.js"></script>
-			<script src="/theme/js/main.js"></script>
+			<script src="{{ SITEURL }}/theme/js/jquery.min.js"></script>
+			<script src="{{ SITEURL }}/theme/js/browser.min.js"></script>
+			<script src="{{ SITEURL }}/theme/js/breakpoints.min.js"></script>
+			<script src="{{ SITEURL }}/theme/js/util.js"></script>
+			<script src="{{ SITEURL }}/theme/js/main.js"></script>
 			<!-- jQuery library -->
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 			<!-- Latest compiled JavaScript -->

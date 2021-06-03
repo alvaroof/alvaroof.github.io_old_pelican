@@ -1,6 +1,6 @@
 Title: A sample article 19
 Date: 2021-03-19
-Category: News
+Category: Not News
 Tags: tag12,tag19,tag17
 Image: post19.jpg
 Summary: Summary of post 19

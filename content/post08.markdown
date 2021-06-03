@@ -1,6 +1,6 @@
 Title: A sample article 08
 Date: 2021-03-08
-Category: News
+Category: Not News
 Tags: tag17,tag16,tag14
 Image: post08.jpg
 Summary: Summary of post 08

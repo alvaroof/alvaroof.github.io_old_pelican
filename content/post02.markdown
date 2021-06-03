@@ -1,6 +1,6 @@
 Title: A sample article 02
 Date: 2021-03-02
-Category: News
+Category: Not News
 Tags: tag10,tag4,tag15
 Image: post02.jpg
 Summary: Summary of post 02

@@ -1,6 +1,6 @@
 Title: A sample article 10
 Date: 2021-03-10
-Category: News
+Category: Not News
 Tags: tag10,tag1,tag8
 Image: post10.jpg
 Summary: Summary of post 10

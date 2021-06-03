@@ -24,7 +24,7 @@ TIMEZONE = "Europe/Madrid"
 BROWSER_COLOR = "#333333"
 PYGMENTS_STYLE = "default" #check on https://pygments.org/demo/
 
-
+# THEME = 'pelican-bootstrap3'
 THEME = 'future-imperfect'
 # THEME_STATIC_DIR = 'theme'
 # THEME_STATIC_PATHS = 'static'

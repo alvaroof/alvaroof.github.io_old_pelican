@@ -1,6 +1,6 @@
 Title: A sample article 20
 Date: 2021-03-20
-Category: News
+Category: Not News
 Tags: tag2,tag14,tag11
 Image: post20.jpg
 Summary: Summary of post 20
