@@ -4,13 +4,13 @@ from datetime import datetime
 
 AUTHOR = 'Alvaro Ortiz'
 SITENAME = 'Data-Gizmo'
-SITESUBTITLE  = 'All my data nightmares'
+SITESUBTITLE  = 'Too much free time'
 HIDE_SITENAME = True
 SITEURL = 'http://alvaroof.github.io'
-#SITELOGO = 'images/my_site_logo.jpg'
+SITELOGO = 'images/logo.jpg'
 #SITELOGO_SIZE = 80
 #FAVICON = 'images/my_site_logo.jpg'
-#AVATAR='images/avatar.jpg'
+AVATAR='images/avatar.jpg'
 #ABOUT_ME="I am a Physicist recycled into Data Scientist"
 PADDED_SINGLE_COLUMN_STYLE = False
 BANNER = 'images/banner-2.jpg'
@@ -66,7 +66,7 @@ SOCIAL = (
 MENUITEMS = (
     ("Archives", "/archives.html"),
     ("Categories", "/categories.html"),
-    ("Tags", "/tags.html"),
+    ("Tags", "/tags.html")
 )
 
 #DISPLAY_TAGS_ON_SIDEBAR = False

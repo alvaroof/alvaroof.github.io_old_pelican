@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>{{ SITENAME }} by HTML5 UP</title>
+		<title>{{ SITENAME }} - Categories</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.min.css" />
@@ -144,13 +144,15 @@
 							    {% for article in articles[:4] %}
 							    <!-- Mini Post -->
 							    <article class="mini-post">
-							      <header>
-							        <h3><a href="single.html">{{ article.title }}</a></h3>
-							        <time class="published" datetime="{{ article.date | strftime('%Y-%m-%d') }}">{{ article.date | strftime('%b %-d, %Y') }}</time>
-							        <a href="#" class="author"><img src="{{ SITEURL }}/theme/images/avatar.jpg" alt="" /></a>
-							      </header>
-							      <a href="single.html" class="image"><img src="images/{{ article.image }}" alt="" /></a>
-							    </article>
+									<header>
+									  <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
+									  <time class="published" datetime="{{ article.date | strftime('%Y-%m-%d') }}">{{ article.date | strftime('%b %-d, %Y') }}</time>
+									  <a href="{{ article.url }}" class="author"><img src="{{ SITEURL }}/theme/images/avatar.jpg" alt="" /></a>
+									</header>
+									<a href="{{ article.url }}" class="image">
+										<img src="images/{{ article.image }}" alt="" />
+									  </a>
+								  </article>
 							    {% endfor %}
 
 							  </div>
