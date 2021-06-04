@@ -97,10 +97,10 @@
 				<!-- Main -->
 
 				<section id="archives">
-					<h1>{{ _('All Articles in')  }}{{ SITENAME }}</h1>
+					<h1>{{ _('All Articles in')  }} {{ SITENAME }}</h1>
 						  {% for article in articles %}
 						  <div> 
-								<span class="categories-timestamp"><time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></span> <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+								<span class="categories-timestamp"><time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }} - </time></span> <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
 							</div>
 						  {% endfor %}
 			  

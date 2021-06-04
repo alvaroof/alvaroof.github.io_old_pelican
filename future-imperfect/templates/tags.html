@@ -9,7 +9,6 @@
 		<title>{{ SITENAME }} by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="{{ SITEURL }}/theme/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" />
 	</head>
@@ -96,20 +95,31 @@
 					<div id="main">
 				<!-- Main -->
 
-				<section id="categories">
-					<h1>{{ _('All Tags for')  }}</h1>
+				  <section id="tags">
+					<h1>{{ _('All Tags for')  }} {{ SITENAME }}</h1>
+					  <div class="panel-group" id="accordion">
 						  {% for tag, articles in tags %}
-						  <div> 
-						  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#collapse-{{tag.slug}}">Category: {{ tag }}, Articles: {{ articles|count }} </button>
-							  <div id="collapse-{{tag.slug}}" class="collapse">
+						  <div class="panel panel-default">
+							  <div class="panel-heading">
+								  <h4 class="panel-title">
+									  <a data-toggle="collapse" data-parent="#accordion" href="#collapse-{{tag.slug}}">{{ tag }} <span class="badge pull-right">{{ articles|count }}</span></a>
+								  </h4>
+							  </div>
+							  <div id="collapse-{{tag.slug}}" class="panel-collapse collapse">
+								  <div class="panel-body">
 									  {% for article in articles %}
-									  <span class="categories-timestamp"><time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></span> <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+									  <div><span class="categories-timestamp"><time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></span> <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></div>
 									  {% endfor %}
 								  </div>
-							</div>
+							  </div>
+						  </div>
 						  {% endfor %}
+					  </div>
 			  
 				  </section>
+
+				  
+
 					</div>
 
 				<!-- Sidebar -->
@@ -172,10 +182,7 @@
 			<script src="{{ SITEURL }}/theme/js/breakpoints.min.js"></script>
 			<script src="{{ SITEURL }}/theme/js/util.js"></script>
 			<script src="{{ SITEURL }}/theme/js/main.js"></script>
-			<!-- jQuery library -->
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-			<!-- Latest compiled JavaScript -->
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+			<script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
 
 	</body>
 </html>
