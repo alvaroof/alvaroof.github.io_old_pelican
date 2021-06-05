@@ -7,7 +7,7 @@ SITENAME = 'Data-Gizmo'
 SITESUBTITLE  = 'Too much free time'
 HIDE_SITENAME = True
 SITEURL = 'http://alvaroof.github.io'
-SITELOGO = 'images/logo.jpg'
+SITELOGO = 'images/icono.jpg'
 #SITELOGO_SIZE = 80
 #FAVICON = 'images/my_site_logo.jpg'
 AVATAR='images/avatar.jpg'
@@ -24,6 +24,7 @@ TIMEZONE = "Europe/Madrid"
 BROWSER_COLOR = "#333333"
 PYGMENTS_STYLE = "default" #check on https://pygments.org/demo/
 
+# THEME = 'Flex'
 # THEME = 'pelican-bootstrap3'
 THEME = 'future-imperfect'
 # THEME_STATIC_DIR = 'theme'
@@ -117,3 +118,8 @@ CATEGORY_FEED_ATOM = "feeds/{slug}.atom.xml"
 # PIWIK_SSL_URL
 # PIWIK_SITE_ID
 # TAG_CLOUD_MAX_ITEMS
+
+# Disqus
+DISQUS_SITENAME = 'alvaroof'
+# DISQUS_SECRET_KEY = ''
+# DISQUS_PUBLIC_KEY = ''

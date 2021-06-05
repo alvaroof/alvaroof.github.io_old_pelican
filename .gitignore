@@ -1,3 +1,5 @@
 .vscode
 pelican_env
 __pycache__
+/publishconf.py
+publishconf.*
